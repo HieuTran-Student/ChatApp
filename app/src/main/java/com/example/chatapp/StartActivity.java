@@ -27,6 +27,8 @@ public class StartActivity extends AppCompatActivity {
     FirebaseAuth auth;
     FirebaseUser firebaseUser;
 
+    TextView forgot_password;
+
     @Override
     protected void onStart() {
         super.onStart();
@@ -55,6 +57,7 @@ public class StartActivity extends AppCompatActivity {
 
         btn_login = findViewById(R.id.login);
         textView_register = findViewById(R.id.sign_in);
+
 
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,5 +97,10 @@ public class StartActivity extends AppCompatActivity {
             }
         });
                 // endregion
+    }
+
+
+    public void toActResetPassword(View view) {
+        startActivity(new Intent(StartActivity.this, ResetPasswordActivity.class));
     }
 }

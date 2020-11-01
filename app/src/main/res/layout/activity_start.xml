@@ -12,7 +12,7 @@
         android:id="@+id/register"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginBottom="8dp"
         android:text="@string/dont_have_an_account"
         android:textAlignment="center"
@@ -21,8 +21,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/login"
-        app:layout_constraintTop_toBottomOf="@+id/login"
-        app:layout_constraintVertical_bias="0.333"
+        app:layout_constraintTop_toBottomOf="@+id/forgot_password"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -70,7 +69,6 @@
         android:drawableStart="@drawable/ic_baseline_lock"
         android:drawablePadding="12dp"
         android:textSize="18sp"
-
         app:layout_constraintEnd_toEndOf="@+id/email"
         app:layout_constraintStart_toStartOf="@+id/email"
         app:layout_constraintTop_toBottomOf="@+id/email"
@@ -81,7 +79,7 @@
         android:id="@+id/login"
         android:layout_width="250dp"
         android:layout_height="60dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="64dp"
         android:background="@drawable/custom_button"
         android:text="@string/login"
         android:textAllCaps="false"
@@ -109,15 +107,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="32dp"
         android:text="@string/sign_in"
         android:textColor="#64FFDA"
         android:textSize="25sp"
         android:textStyle="italic|bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/register"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/register" />
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="toActResetPassword"
+        android:text="@string/forgot_your_password"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/login"
+        app:layout_constraintStart_toStartOf="@+id/login"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
