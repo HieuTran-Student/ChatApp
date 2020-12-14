@@ -32,7 +32,6 @@ public class StartActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-
         // region Auto login with user information
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
@@ -76,7 +75,7 @@ public class StartActivity extends AppCompatActivity {
                                     if (task.isSuccessful()) {
                                         Toast.makeText(StartActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
                                         Intent intent = new Intent(StartActivity.this,MainActivity.class);
-                                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | intent.FLAG_ACTIVITY_NEW_TASK);
+                                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                         startActivity(intent);
                                         finish();
                                     } else {
