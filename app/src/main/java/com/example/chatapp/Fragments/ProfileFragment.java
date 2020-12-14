@@ -62,7 +62,7 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_profile, container, false);
+        View view = inflater.inflate(R.layout.fragment_profile, container,false);
 
         image_profile = view.findViewById(R.id.profile_image);
         username = view.findViewById(R.id.username);
@@ -75,7 +75,7 @@ public class ProfileFragment extends Fragment {
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                
+
                 if (getActivity() == null) {
                     return;
                 }

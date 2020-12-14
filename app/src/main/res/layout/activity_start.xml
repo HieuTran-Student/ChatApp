@@ -7,7 +7,6 @@
     android:background="@drawable/background"
     tools:context=".StartActivity">
 
-
     <TextView
         android:id="@+id/register"
         android:layout_width="0dp"
@@ -22,6 +21,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/login"
         app:layout_constraintTop_toBottomOf="@+id/forgot_password"
+        app:layout_constraintVertical_bias="0.016"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -47,13 +47,14 @@
         android:id="@+id/email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="92dp"
         android:drawableStart="@drawable/ic_baseline_email"
         android:drawablePadding="12dp"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/txt_regnessem"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/txt_regnessem"
         app:layout_constraintTop_toBottomOf="@+id/txt_regnessem"
         app:met_floatingLabel="normal"
